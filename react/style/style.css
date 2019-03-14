@@ -1,0 +1,36 @@
+body,html{height:100%}
+.divTable{ display: table; }
+.divTableRow { display: table-row; }
+.divTableHeading { display: table-header-group;}
+.divTableCell, .divTableHead { display: table-cell;}
+.divTableBody { display: table-row-group;}
+
+div.GridTable {
+  border: 2px solid #FFFFFF;
+  width: 100%;
+  border-collapse: collapse;
+  display: flex;
+}
+.divTable.GridTable .divTableCell, .divTable.GridTable .divTableHead {
+  border: 1px solid #FFFFFF;
+  padding: 3px 4px;
+}
+.divTable.GridTable .divTableBody .divTableCell {
+  font-size: 13px;
+}
+.divTable.GridTable .divTableCell:nth-child(even) {
+  background: #EBEBEB;
+}
+.divTable.GridTable .divTableHeading {
+  background: #FFFFFF;
+  border-bottom: 4px solid #333333;
+}
+.divTable.GridTable .divTableHeading .divTableHead {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333333;
+  border-left: 2px solid #333333;
+}
+.divTable.GridTable .divTableHeading .divTableHead:first-child {
+  border-left: none;
+}
